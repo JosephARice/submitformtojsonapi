@@ -9,19 +9,28 @@
 <body>
     <div class="container card card-color">
         <form action="" id="sampleForm">
-            <h2>Sample Form to JSON API</h2>
+	    <h1>Recipe</h1>
+	    <h3><u>AuthN</u></h3>
             <div class="form-row">
-                <label for="FirstName">First Name</label>
-                <input type="text" class="input-text input-text-block w-100" id="FirstName" name="FirstName">
+                <label for="oidc">hmac</label>
+                <input type="text" class="input-text input-text-block w-100" id="hmac" name="hmac">
             </div>
+	    <h3><u>AuthZ</u></h3>
             <div class="form-row">
-                <label for="LastName">Last Name</label>
-                <input type="text" class="input-text input-text-block w-100" id="LastName" name="LastName">
+                <label for="oidc">oidc</label>
+                <input type="text" class="input-text input-text-block w-100" id="oidc" name="oidc">
             </div>
+	    <h3><u>Filter</u></h3>
             <div class="form-row">
-                <label for="Email">Email</label>
-                <input type="email" class="input-text input-text-block w-100" id="Email" name="Email">
+                <label for="Filter">redact</label>
+                <input type="text" class="input-text input-text-block w-100" id="redact" name="redact">
             </div>
+	    <h3><u>Validate</u></h3>
+            <div class="form-row">
+                <label for="swagger">swagger</label>
+                <input type="text" class="input-text input-text-block w-100" id="swagger" name="swagger">
+            </div>
+<br>
             <div class="form-row mx-auto">
                 <button type="submit" class="btn-submit" id="btnSubmit">
                 Submit
